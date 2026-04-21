@@ -67,6 +67,7 @@ export default function Navbar({ onSearchResult }: NavbarProps) {
     if (searchQuery.trim()) {
       setLocation(`/?search=${encodeURIComponent(searchQuery)}`);
       setShowDropdown(false);
+      setSearchQuery("");
     }
   };
 

@@ -38,7 +38,9 @@ export default function Home() {
 
   // Parse search from URL
   useEffect(() => {
-    const params = new URLSearchParams(location.split("?")[1] || "");
+    // Support both hash-based and regular URL search params
+    const hashSearch = window.location.hash.split("?")[1] || "";
+    const params = new URLSearchParams(hashSearch || location.split("?")[1] || "");
     const q = params.get("search");
     if (q) setSearchQuery(q);
   }, [location]);
@@ -136,7 +138,7 @@ export default function Home() {
       <div 
         className="relative pt-16 pb-16 overflow-hidden"
         style={{
-          backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663396542934/KXsm9ghLm6LDbD6vj8cypu/hero-bg-XHYiES9xLvWjvuFGBysYCD.webp)`,
+          backgroundImage: `url(/hero-bg.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -7,7 +7,7 @@
 import { useState, useEffect, useMemo } from "react";
 import type { Anime } from "@/lib/types";
 
-const ANIME_DATA_URL = "/manus-storage/anime_data_688b3cef.json";
+const ANIME_DATA_URL = "/anime_data.json";
 
 let cachedData: Anime[] | null = null;
 let fetchPromise: Promise<Anime[]> | null = null;

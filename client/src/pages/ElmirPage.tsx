@@ -245,7 +245,7 @@ export default function ElmirPage() {
         <div
           className="relative py-20 overflow-hidden"
           style={{
-            backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663396542934/KXsm9ghLm6LDbD6vj8cypu/elmir-bg-N5Jw4oFeQNpu5nAJNQ5nuG.webp)`,
+            backgroundImage: `url(/elmir-bg.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
